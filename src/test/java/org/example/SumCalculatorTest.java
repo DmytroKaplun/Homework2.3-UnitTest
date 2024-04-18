@@ -15,7 +15,7 @@ class SumCalculatorTest {
 
     @BeforeEach
     void beforeEach() {
-        //then
+        //given
         sumCalculator = new SumCalculator();
     }
 
@@ -41,8 +41,8 @@ class SumCalculatorTest {
 
     private static Stream<Arguments> validInputParam() {
         return Stream.of(
-                Arguments.of("withInput1", 1, 1),
-                Arguments.of("withInput3", 3, 6));
+                Arguments.of("with input 1", 1, 1),
+                Arguments.of("with input 3", 3, 6));
     }
 
 }
